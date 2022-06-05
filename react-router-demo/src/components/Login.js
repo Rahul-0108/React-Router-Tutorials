@@ -12,7 +12,7 @@ export const Login = () => {
 
   const handleLogin = () => {
     auth.login(user)
-    navigate(redirectPath, { replace: true })
+    navigate(redirectPath, { replace: true }) // so cannot go back to login page using browser back button
   }
   return (
     <div>
